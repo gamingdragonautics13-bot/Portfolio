@@ -9,7 +9,7 @@ export default function FutureTrajectory() {
       {/* Section Header */}
       <div className="mb-16 text-left space-y-3">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-panel border border-spider-lavender/30 text-xs font-mono text-spider-lavender tracking-widest uppercase">
-          <Compass className="w-3.5 h-3.5 text-spider-lavender animate-pulse" />
+          <Compass className="w-3.5 h-3.5 text-spider-lavender" />
           <span>SECTION 06 // MISSION TIMELINE</span>
         </div>
         <h2

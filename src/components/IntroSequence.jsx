@@ -101,7 +101,7 @@ export default function IntroSequence({ onEnter }) {
               className="space-y-4"
             >
               <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full border border-spider-red/40 bg-spider-red/10 text-spider-rose font-mono text-xs tracking-wider uppercase">
-                <span className="w-1.5 h-1.5 rounded-full bg-spider-red animate-ping" />
+                <span className="w-1.5 h-1.5 rounded-full bg-spider-red shadow-[0_0_6px_#f43f5e]" />
                 NEURAL PROTOCOL DETECTED // EARTH-1301
               </div>
 
@@ -124,7 +124,7 @@ export default function IntroSequence({ onEnter }) {
               className="space-y-6 flex flex-col items-center"
             >
               <div className="relative group">
-                <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-spider-red via-spider-lavender to-spider-blue opacity-50 blur-lg group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse" />
+                <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-spider-red via-spider-lavender to-spider-blue opacity-50 blur-lg group-hover:opacity-100 transition duration-700" />
                 
                 <div className="relative p-6 rounded-2xl glass-panel-glow border border-white/15 max-w-lg">
                   <div className="flex items-center justify-between border-b border-white/10 pb-3 mb-4 text-left">

@@ -29,7 +29,7 @@ export default function WebShooterFiles({ onTriggerWebTransition }) {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 text-left border-b border-white/10 pb-8">
           <div className="space-y-3">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-panel border border-spider-lavender/30 text-xs font-mono text-spider-lavender tracking-widest uppercase">
-              <FlaskConical className="w-3.5 h-3.5 text-spider-red animate-pulse" />
+              <FlaskConical className="w-3.5 h-3.5 text-spider-red" />
               <span>SECTION 03 // MULTIVERSE LAB CONTAINER</span>
             </div>
             <h2
@@ -93,7 +93,7 @@ export default function WebShooterFiles({ onTriggerWebTransition }) {
               {/* Top Cap */}
               <div className="w-full flex items-center justify-between pb-4 border-b border-white/15">
                 <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 rounded-full bg-spider-red animate-ping" />
+                  <div className="w-2.5 h-2.5 rounded-full bg-spider-red shadow-[0_0_8px_#f43f5e]" />
                   <span className="font-mono text-[10px] text-spider-powder tracking-widest uppercase font-bold">
                     SPECIMEN: {activeProject.universe}
                   </span>
@@ -114,7 +114,7 @@ export default function WebShooterFiles({ onTriggerWebTransition }) {
                   }}
                 >
                   <Globe
-                    className="w-12 h-12 animate-pulse"
+                    className="w-12 h-12"
                     style={{ color: activeProject.tubeAccent }}
                   />
                   <div className="absolute inset-0 rounded-full border border-white/20 animate-spin-slow" />

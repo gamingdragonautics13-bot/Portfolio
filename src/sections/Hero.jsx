@@ -76,7 +76,7 @@ export default function Hero({ onTriggerWebTransition }) {
             transition={{ duration: 0.6 }}
             className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-panel-glow border border-spider-lavender/30 text-xs font-mono text-spider-lavender tracking-wider uppercase"
           >
-            <span className="w-2 h-2 rounded-full bg-spider-red animate-ping" />
+            <span className="w-2 h-2 rounded-full bg-spider-mint shadow-[0_0_8px_#6ee7b7]" />
             <span>EARTH-1301 // SECTOR: KOLKATA</span>
             <span className="text-slate-500">|</span>
             <span className="text-spider-mint">FIEM CSE (2026–2030)</span>
@@ -133,7 +133,7 @@ export default function Hero({ onTriggerWebTransition }) {
             transition={{ duration: 0.7, delay: 0.4 }}
             className="p-3.5 rounded-xl glass-panel border border-spider-lavender/20 flex items-center gap-3 max-w-xl"
           >
-            <Zap className="w-5 h-5 text-spider-red shrink-0 animate-pulse" />
+            <Zap className="w-5 h-5 text-spider-red shrink-0 filter drop-shadow-[0_0_8px_rgba(244,63,94,0.6)]" />
             <p className="font-mono text-xs text-slate-300 tracking-wide">
               <span className="text-spider-lavender font-bold">TACTICAL DIRECTIVE:</span> FROM IDEAS TO INTERACTIVE EXPERIENCES.
             </p>
@@ -224,8 +224,8 @@ export default function Hero({ onTriggerWebTransition }) {
                 <span className="px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md text-[10px] font-mono text-spider-lavender border border-white/10 uppercase">
                   BIOMETRIC PROFILE
                 </span>
-                <span className="px-2 py-0.5 rounded bg-spider-red/80 text-[10px] font-mono text-white font-bold animate-pulse">
-                  ACTIVE
+                <span className="px-2.5 py-0.5 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-[10px] font-mono text-emerald-400 font-bold shadow-[0_0_10px_rgba(52,211,153,0.3)]">
+                  SYS ONLINE
                 </span>
               </div>
 

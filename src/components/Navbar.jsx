@@ -67,8 +67,8 @@ export default function Navbar({ onTriggerWebTransition }) {
           data-cursor-text="HOME"
         >
           <div className="relative w-8 h-8 rounded-lg glass-panel-glow border border-spider-lavender/30 flex items-center justify-center group-hover:border-spider-red/60 transition-colors">
-            <Radio className="w-4 h-4 text-spider-red animate-pulse" />
-            <div className="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-spider-mint animate-ping" />
+            <Radio className="w-4 h-4 text-spider-red group-hover:scale-110 transition-transform" />
+            <div className="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-spider-mint shadow-[0_0_8px_#6ee7b7]" />
           </div>
           <div>
             <div className="flex items-center gap-2">

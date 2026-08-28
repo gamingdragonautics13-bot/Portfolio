@@ -87,8 +87,8 @@ export default function WebTransitionOverlay({ isTransitioning, onComplete, targ
     <div className="fixed inset-0 z-[9999] pointer-events-none flex items-center justify-center">
       <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
       <div className="absolute inset-0 bg-spider-bg/30 backdrop-blur-xs transition-opacity duration-300 pointer-events-none" />
-      <div className="relative z-10 px-4 py-2 rounded-full glass-panel-glow border border-spider-red/40 text-spider-lavender text-xs font-mono tracking-widest uppercase flex items-center gap-2 animate-bounce shadow-spider-red">
-        <span className="w-2 h-2 rounded-full bg-spider-red animate-ping" />
+      <div className="relative z-10 px-4 py-2 rounded-full glass-panel-glow border border-spider-red/40 text-spider-lavender text-xs font-mono tracking-widest uppercase flex items-center gap-2 shadow-spider-red">
+        <span className="w-2 h-2 rounded-full bg-spider-red shadow-[0_0_8px_#f43f5e]" />
         <span>THWIP // TRAVERSING DIMENSIONS</span>
       </div>
     </div>

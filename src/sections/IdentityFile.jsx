@@ -97,7 +97,7 @@ export default function IdentityFile({ onTriggerWebTransition }) {
 
                 {/* Click to Access Photo Archive Banner */}
                 <div className="absolute bottom-2 inset-x-2 p-2 rounded-lg bg-black/85 backdrop-blur-md border border-white/15 text-center flex items-center justify-center gap-2 text-white">
-                  <Camera className="w-3.5 h-3.5 text-spider-red animate-pulse" />
+                  <Camera className="w-3.5 h-3.5 text-spider-red" />
                   <span className="font-mono text-[10px] tracking-widest uppercase font-bold text-spider-powder">
                     PHOTOGRAPHY ARCHIVE ACCESS →
                   </span>

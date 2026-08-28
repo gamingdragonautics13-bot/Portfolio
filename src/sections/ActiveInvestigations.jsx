@@ -10,7 +10,7 @@ export default function ActiveInvestigations() {
       {/* Section Header */}
       <div className="mb-16 text-left space-y-3">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-panel border border-spider-lavender/30 text-xs font-mono text-spider-lavender tracking-widest uppercase">
-          <Search className="w-3.5 h-3.5 text-spider-powder animate-pulse" />
+          <Search className="w-3.5 h-3.5 text-spider-powder" />
           <span>SECTION 05 // ACTIVE INVESTIGATIONS</span>
         </div>
         <h2
@@ -70,11 +70,14 @@ export default function ActiveInvestigations() {
               </p>
             </div>
 
-            {/* Bottom Status Pulse */}
+            {/* Bottom Status Indicator */}
             <div className="pt-2 flex items-center gap-2 font-mono text-[11px] text-slate-400">
               <div
-                className="w-2 h-2 rounded-full animate-ping"
-                style={{ backgroundColor: inv.accent }}
+                className="w-2 h-2 rounded-full"
+                style={{
+                  backgroundColor: inv.accent,
+                  boxShadow: `0 0 8px ${inv.accent}`,
+                }}
               />
               <span>TELEMETRY RECORDED // LIVE EXPLORATION</span>
             </div>

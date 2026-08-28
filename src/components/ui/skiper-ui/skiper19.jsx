@@ -76,7 +76,7 @@ export default function Skiper19({ items = [], className = '' }) {
             >
               {/* Center Multiverse Milestone Hub Node */}
               <div className="absolute left-4 sm:left-1/2 -translate-x-1/2 w-9 h-9 rounded-full glass-panel-glow border-2 border-spider-lavender flex items-center justify-center text-white z-20 group-hover:scale-125 group-hover:border-spider-red transition-all duration-300 shadow-[0_0_20px_rgba(196,181,253,0.5)]">
-                <div className="w-2.5 h-2.5 rounded-full bg-spider-red animate-ping" />
+                <div className="w-3 h-3 rounded-full bg-gradient-to-r from-spider-red to-spider-lavender shadow-[0_0_10px_rgba(244,63,94,0.8)]" />
               </div>
 
               {/* Trajectory Content Glass Card */}

@@ -32,7 +32,7 @@ export default function OpenChannel({ onTriggerWebTransition }) {
       {/* Section Header */}
       <div className="mb-16 text-left space-y-3">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-panel border border-spider-lavender/30 text-xs font-mono text-spider-lavender tracking-widest uppercase">
-          <Radio className="w-3.5 h-3.5 text-spider-red animate-pulse" />
+          <Radio className="w-3.5 h-3.5 text-spider-red" />
           <span>SECTION 07 // SECURE COMMUNICATION</span>
         </div>
         <h2
@@ -59,7 +59,7 @@ export default function OpenChannel({ onTriggerWebTransition }) {
                   Let's Build Something Together
                 </h3>
               </div>
-              <span className="w-3 h-3 rounded-full bg-spider-mint animate-ping" />
+              <span className="w-2.5 h-2.5 rounded-full bg-spider-mint shadow-[0_0_8px_#6ee7b7]" />
             </div>
 
             <p className="text-sm sm:text-base text-slate-300 font-sans leading-relaxed">

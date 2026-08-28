@@ -15,7 +15,7 @@ export default function PhotoArchive({ onTriggerWebTransition }) {
       {/* Section Header */}
       <div className="mb-16 text-left space-y-3">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-panel border border-spider-lavender/30 text-xs font-mono text-spider-lavender tracking-widest uppercase">
-          <Camera className="w-3.5 h-3.5 text-spider-rose animate-pulse" />
+          <Camera className="w-3.5 h-3.5 text-spider-rose" />
           <span>SECTION 04 // DAILY BUGLE SPECIAL ASSIGNMENT</span>
         </div>
         <h2
@@ -103,7 +103,7 @@ export default function PhotoArchive({ onTriggerWebTransition }) {
                 {/* Hover CTA Overlay */}
                 <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/60 backdrop-blur-xs">
                   <div className="w-12 h-12 rounded-full bg-spider-red flex items-center justify-center text-white mb-2 shadow-spider-red">
-                    <Eye className="w-6 h-6 animate-pulse" />
+                    <Eye className="w-6 h-6" />
                   </div>
                   <span className="font-display font-bold text-sm text-white">VIEW CAROUSEL ARCHIVE</span>
                   <span className="font-mono text-[10px] text-spider-powder">THWIP TRANSITION →</span>

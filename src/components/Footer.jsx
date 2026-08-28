@@ -15,7 +15,7 @@ export default function Footer() {
         {/* Brand & Society Signature */}
         <div className="space-y-1.5">
           <div className="flex items-center justify-center md:justify-start gap-2">
-            <Radio className="w-4 h-4 text-spider-red animate-pulse" />
+            <Radio className="w-4 h-4 text-spider-red" />
             <span className="font-glitch text-base tracking-wider uppercase bg-gradient-to-r from-[#ff3366] via-[#a855f7] via-[#38bdf8] to-[#34d399] bg-clip-text text-transparent filter drop-shadow-[0_0_12px_rgba(255,51,102,0.6)]">
               SHUVARTHI DAS
             </span>
