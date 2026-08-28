@@ -48,7 +48,8 @@ export const personalInfo = {
     loadingBadge: "/assets/loading-badge.jpeg",
     webIntroVideo: "/assets/web-intro.mp4",
     projectBgVideo: "/assets/project-bg.mp4",
-    thwipAudio: "/assets/thwip.mp3"
+    thwipAudio: "/assets/thwip.mp3",
+    bgMusic: "/assets/bg-music.mp3"
   }
 };
 
