@@ -14,7 +14,7 @@ const NAV_LINKS = [
 ];
 
 export default function Navbar({ onTriggerWebTransition }) {
-  const [soundActive, setSoundActive] = useState(false);
+  const [soundActive, setSoundActive] = useState(() => soundManager.getSoundEnabled());
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -23,7 +23,11 @@ export default function Navbar({ onTriggerWebTransition }) {
       setScrolled(window.scrollY > 40);
     };
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    const unsubscribe = soundManager.subscribe(setSoundActive);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      unsubscribe();
+    };
   }, []);
 
   const toggleSound = () => {

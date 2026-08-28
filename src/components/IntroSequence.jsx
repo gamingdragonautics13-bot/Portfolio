@@ -29,10 +29,13 @@ export default function IntroSequence({ onEnter }) {
   const handleEnter = () => {
     soundManager.setSoundEnabled(true);
     soundManager.playThwip();
+    soundManager.playBgMusic();
     onEnter();
   };
 
   const handleSkip = () => {
+    soundManager.setSoundEnabled(true);
+    soundManager.playBgMusic();
     onEnter();
   };
 
