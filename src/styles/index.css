@@ -1,0 +1,227 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --spider-red: #f43f5e;
+  --spider-lavender: #c4b5fd;
+  --spider-powder: #bae6fd;
+  --spider-mint: #6ee7b7;
+  --spider-card-bg: rgba(14, 16, 32, 0.7);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #070811;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #f43f5e, #c4b5fd, #60a5fa);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f43f5e;
+}
+
+/* Pastel Glassmorphism classes */
+.glass-panel {
+  background: rgba(22, 25, 48, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.35);
+}
+
+.glass-panel-glow {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(196, 181, 253, 0.05) 50%, rgba(244, 63, 94, 0.04) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 10px 40px -10px rgba(196, 181, 253, 0.15), 0 0 15px 0 rgba(244, 63, 94, 0.1);
+}
+
+.glass-panel-interactive {
+  background: rgba(18, 21, 40, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-interactive:hover {
+  background: rgba(26, 30, 58, 0.85);
+  border-color: rgba(196, 181, 253, 0.35);
+  box-shadow: 0 14px 44px -8px rgba(196, 181, 253, 0.25), 0 0 20px 0 rgba(244, 63, 94, 0.15);
+  transform: translateY(-3px);
+}
+
+/* Spider-Society Lab Web Grid */
+.spider-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(196, 181, 253, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(196, 181, 253, 0.04) 1px, transparent 1px);
+}
+
+/* Hologram Scanlines */
+.hologram-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.hologram-overlay::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(rgba(18, 16, 38, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+  z-index: 10;
+  background-size: 100% 3px, 6px 100%;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+/* 3D Glass Test Tube */
+.test-tube-container {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(196, 181, 253, 0.06) 30%, rgba(96, 165, 250, 0.08) 70%, rgba(244, 63, 94, 0.15) 100%);
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9999px 9999px 24px 24px;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.1), 0 10px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(12px);
+}
+
+/* Text glow utilities */
+.glow-text-lavender {
+  text-shadow: 0 0 15px rgba(196, 181, 253, 0.6), 0 0 30px rgba(196, 181, 253, 0.2);
+}
+
+.glow-text-red {
+  text-shadow: 0 0 15px rgba(244, 63, 94, 0.6), 0 0 30px rgba(244, 63, 94, 0.3);
+}
+
+.glow-text-cyan {
+  text-shadow: 0 0 15px rgba(56, 189, 248, 0.6), 0 0 30px rgba(56, 189, 248, 0.3);
+}
+
+/* Spider-Sense Tingle Pulse Effect */
+@keyframes tingleWave {
+  0% { transform: scale(0.95); opacity: 0.7; filter: drop-shadow(0 0 5px rgba(244, 63, 94, 0.5)); }
+  50% { transform: scale(1.05); opacity: 1; filter: drop-shadow(0 0 16px rgba(196, 181, 253, 0.8)) drop-shadow(0 0 25px rgba(244, 63, 94, 0.6)); }
+  100% { transform: scale(0.95); opacity: 0.7; filter: drop-shadow(0 0 5px rgba(244, 63, 94, 0.5)); }
+}
+
+.tingle-active {
+  animation: tingleWave 2.4s ease-in-out infinite;
+}
+
+/* Hologram Spider Blend Mode */
+.hologram-spider-render {
+  mix-blend-mode: screen;
+  filter: contrast(1.2) brightness(1.2) drop-shadow(0 0 12px rgba(56, 189, 248, 0.7));
+  pointer-events: none;
+}
+
+/* ========================================================= */
+/* LIGHT MODE (PASTEL RED + BLUE) SYSTEM */
+/* ========================================================= */
+
+html.light {
+  --spider-bg: #fff8f8;
+  --spider-card-bg: rgba(255, 255, 255, 0.85);
+}
+
+html.light body {
+  background-color: #fff6f6;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(254, 205, 211, 0.45) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(186, 230, 253, 0.5) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, rgba(255, 228, 230, 0.3) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(224, 242, 254, 0.5) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(254, 205, 211, 0.4) 0px, transparent 50%);
+  color: #0f172a;
+}
+
+html.light .glass-panel {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(244, 63, 94, 0.18);
+  box-shadow: 0 10px 35px -5px rgba(244, 63, 94, 0.08), 0 4px 15px -2px rgba(56, 189, 248, 0.08);
+}
+
+html.light .glass-panel-glow {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 228, 230, 0.6) 50%, rgba(224, 242, 254, 0.6) 100%);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1.5px solid rgba(244, 63, 94, 0.25);
+  box-shadow: 0 12px 40px -8px rgba(244, 63, 94, 0.15), 0 0 20px 0 rgba(56, 189, 248, 0.12);
+}
+
+html.light .glass-panel-interactive {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(244, 63, 94, 0.18);
+  box-shadow: 0 8px 30px -4px rgba(244, 63, 94, 0.08);
+}
+
+html.light .glass-panel-interactive:hover {
+  background: rgba(255, 255, 255, 0.98);
+  border-color: rgba(244, 63, 94, 0.45);
+  box-shadow: 0 14px 44px -6px rgba(244, 63, 94, 0.2), 0 0 20px 0 rgba(56, 189, 248, 0.18);
+}
+
+html.light .spider-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(244, 63, 94, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(56, 189, 248, 0.08) 1px, transparent 1px);
+}
+
+html.light .test-tube-container {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 228, 230, 0.5) 40%, rgba(224, 242, 254, 0.5) 80%, rgba(244, 63, 94, 0.2) 100%);
+  border: 1.5px solid rgba(244, 63, 94, 0.3);
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.8), 0 10px 30px rgba(244, 63, 94, 0.15);
+}
+
+html.light header {
+  background-color: rgba(255, 255, 255, 0.88) !important;
+  border-bottom-color: rgba(244, 63, 94, 0.15) !important;
+}
+
+html.light footer {
+  background-color: rgba(255, 245, 245, 0.95) !important;
+  border-top-color: rgba(244, 63, 94, 0.18) !important;
+}
+
+html.light ::-webkit-scrollbar-track {
+  background: #fff1f2;
+}
+
+html.light ::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #f43f5e, #38bdf8);
+}
+
+html.light .text-slate-100,
+html.light .text-slate-200,
+html.light .text-slate-300,
+html.light .text-white {
+  color: #0f172a;
+}
+
+html.light .text-slate-400,
+html.light .text-slate-500 {
+  color: #475569;
+}
+
+/* Reduced Motion Override */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
